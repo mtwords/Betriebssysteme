@@ -1,0 +1,38 @@
+Lösung "Übung DDD"
+=====================
+
+E 1.1)
+--------
+siehe kompiliertes Programm
+
+E 1.2)
+--------
+a) 	eip: 0x80483c1 (initialisiere a)
+		eip: 0x80483cb (initialisiere b)
+		Grösse: 10 Bytes
+		
+b) Ja, a und d enthalten die initialisierten Inhalte. a scheint signed inizialisiert worden zu sein.
+
+E 1.3)
+---------
+a)	Little Endian
+b)	d[0]
+
+E 1.4)
+---------
+a)	u:	Adresse 0x804a090
+		v:	Adresse 0x804a094
+		w:	Adresse 0x804a098
+		--> align 4
+
+E 1.5)
+---------
+a)	a:	4
+		x:	12
+		s:	4
+		*s:	1
+		"Hallo Welt!":	12
+
+b)	Weil der Pointer nur auf das erste Zeichen zeigt.
+
+c)	Datentyp String ist ein Array, und diese werden immer mit dem Zeichen \0 abgeschlossen um das Ende zu markieren
