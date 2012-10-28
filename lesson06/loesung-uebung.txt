@@ -1,0 +1,35 @@
+Lösung "Übung Virtual Memory"
+================================
+
+E 4.1)
+---------
+a)  0, da Blocknr = Adresse DIV Blockgrösse
+b)  Ein Block (= Seiten) hat eine fixe grösse 2^n. Hierbei genügt es,
+    die niedrigsten n-Bit bei der virtuellen Adresse abzuschneiden, um die
+    Seiten- bzw. Blocknummer zu erhalten (Right-Shift um n Bit).
+c)  0x34af6784h = 11 0100 1010 1111 0110 0111 1000 0100b
+    12 bit abschneiden
+    ==> 11 0100 1010 1111 0110 = 0x34af6h
+d)  Relativ-Adresse = X - (Seitenrahmen-Nr * Seitengrösse)
+      oder einfacher
+    Relativ-Adresse = X mod Seitengrösse
+    wobei (Seitenrahmen-Nr * Seitengrösse) der Startadresse des jeweiligen
+    Blocks entspricht
+      oder (einfacher)
+    x mod seitengroesse
+e)
+f)
+
+E 4.2)
+---------
+Voraussetzungen:
+32Bit grosse Adressen (logisch)
+24Bit grosse Adressen (physisch)
+Seitengrösse (Pageframe) 2KB = 2 * 2^10B
+
+a)  Adresseraum: 2^32B
+    ==> anzahl Seiten = 2^32B / (2 * 2^10) = 2^32 / 2^11 = 2^21
+b)  2^24B / 2^11B = 2^24 / 2^11 = 2^13
+c)  Umsetzungstabelle muss gleichviele Einträge haben wie es Pages gibt
+    ==> 2^21
+d)
